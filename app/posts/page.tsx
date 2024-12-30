@@ -7,7 +7,7 @@ const CreatePost = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [authorId, setAuthorId] = useState<number | ''>('');
-    const [users, setUsers] = useState<any[]>([]);
+    const [users, setUsers] = useState<{ id: number; name: string }[]>([]);
 
     // Fetch users for the select dropdown
     useEffect(() => {
